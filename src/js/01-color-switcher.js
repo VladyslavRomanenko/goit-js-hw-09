@@ -7,7 +7,7 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-let intervalId;
+let intervalId = null;
 
 const startChangeColor = () => {
   startRef.disabled = true;
@@ -20,7 +20,6 @@ const startChangeColor = () => {
 const stopChangeColor = () => {
   startRef.disabled = false;
   stopRef.disabled = true;
-
   clearInterval(intervalId);
 };
 
