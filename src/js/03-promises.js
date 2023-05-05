@@ -35,6 +35,3 @@ form.addEventListener('submit', event => {
       });
   }
 });
-
-const shouldResolve = Math.random() > 0.3;
-console.log(shouldResolve);
